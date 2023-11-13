@@ -1,0 +1,107 @@
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    color: #fff;
+    background-color: black;
+}
+
+img{
+    max-width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+    cursor: url(images/cursor.svg), none;
+}
+
+.black-background{
+    height: 100vh;
+}
+
+.name{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 10px;
+    z-index: 5;
+}
+
+.name:hover{
+    text-decoration: underline;
+}
+
+.title{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 37px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 150%;
+    z-index: -1;
+}
+
+.copyright{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 10px;
+    z-index: 5;
+}
+
+.rights{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 10px;
+    z-index: 5;
+}
+
+.container img{
+    margin-bottom: 130px;
+    filter: grayscale(100%);
+    transition: all 0.7s;
+}
+
+.container img:hover{
+    filter: grayscale(0);
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+    transform: translateY(-130px);
+}
+
+.footer{
+    height: 100vh;
+}
+
+@media(max-width:950px){
+    .title{
+        width: 85%;
+    }
+    .container{
+        width: 80%;
+        transform: translateY(-80px);
+    }
+}
+
+@media(max-width:768px){
+   .title{
+    font-size:27px;
+    width: 90;
+   }
+   .container{
+    transform: translateY(0);
+    width: 90%;
+   }
+   .container img{
+    margin-bottom: 50px;
+   }
+   
+}
